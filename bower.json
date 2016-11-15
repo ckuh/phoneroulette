@@ -1,0 +1,21 @@
+{
+  "name": "phone",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ckuh <kuh_chris@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jQuery-SlotMachine": "jquery-slotmachine#^3.0.1"
+  }
+}
