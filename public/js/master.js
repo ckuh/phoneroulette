@@ -36,6 +36,7 @@ $('document').ready(function() {
 	$('#yes').click(function() {
     if(!rolling) {
       if(valid.every(function(item) {return item})) {
+        if($('.cheat')) { $('.cheat').fadeOut('slow') }
         $oops = $('<div class=oops><h1>Oops</h1></div>')
         $oops.css({display: 'none'})
         $('#casino').after($oops)
@@ -47,6 +48,7 @@ $('document').ready(function() {
         roll()
         rolling = true
       } else {
+        if($('.oops')) { $('.oops').fadeOut('slow') }
         $cheat = $('<div class=cheat><h1>Cheater</h1></div>')
         $cheat.css({display: 'none'})
         $('#casino').after($cheat)
