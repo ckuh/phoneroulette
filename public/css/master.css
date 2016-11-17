@@ -1,8 +1,21 @@
 html, body {
   height: 100%;
+  color: #565051;
 }
 
 .oops {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  min-width: 640px;
+}
+
+.cheat {
+  color: red;
   position: absolute;
   top: 65%;
   left: 50%;
@@ -48,13 +61,20 @@ html, body {
 .slotMachine {
   margin-left: 5px;
 	width: 8.5%;
-	border: 2px solid #565051;
+	border: 2px solid red;
 	height: 90px;
 	padding: 0px;
 	overflow: hidden;
 	display: inline-block;
 	background-color: #ffffff;
   line-height: 90px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+}
+
+.correct {
+  border-color: green;
 }
 
 .slot {
